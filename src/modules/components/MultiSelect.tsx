@@ -66,7 +66,7 @@ export const MultiSelect = () => {
     try {
       return Function(`return (${expression})`)();
     } catch (error) {
-      console.error("Ошибка вычисления выражения:", error);
+      console.error("Error in calculations:", error);
       return null;
     }
   };
